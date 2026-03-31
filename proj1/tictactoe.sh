@@ -128,6 +128,9 @@ play() {
         ((round = 1 - round))
         ((currRound = 1 + currRound))
     done
+    if [ $currRound = $MAX_ROUND ]; then
+        echo "Remis!"
+    fi
 }
 
 clear
