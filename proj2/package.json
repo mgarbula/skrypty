@@ -1,0 +1,12 @@
+{
+  "name": "proj2",
+  "version": "1.0.0",
+  "description": "Simple shop with REST API and product list client",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.4"
+  }
+}
