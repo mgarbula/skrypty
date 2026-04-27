@@ -19,9 +19,9 @@
 :x: 5.0 Konfiguracja CORS po stronie NodeJS + konfiguracja po stronie ReactJS
 
 ## [Crawler w Ruby](https://github.com/mgarbula/skrypty/tree/main/proj3)
-:white_check_mark: 3.0 Należy pobrać podstawowe dane o produktach (tytuł, cena), dowolna kategoria [commit] (https://github.com/mgarbula/skrypty/commit/d727e4c131cb10ef95a13ee931daa53298bf8924)
+:white_check_mark: 3.0 Należy pobrać podstawowe dane o produktach (tytuł, cena), dowolna kategoria [commit](https://github.com/mgarbula/skrypty/commit/d727e4c131cb10ef95a13ee931daa53298bf8924)
 
-:white_check_mark: 3.5 Należy pobrać podstawowe dane o produktach wg słów kluczowych [commit] (https://github.com/mgarbula/skrypty/commit/d727e4c131cb10ef95a13ee931daa53298bf8924)
+:white_check_mark: 3.5 Należy pobrać podstawowe dane o produktach wg słów kluczowych [commit](https://github.com/mgarbula/skrypty/commit/d727e4c131cb10ef95a13ee931daa53298bf8924)
 
 :x: 4.0 Należy rozszerzyć dane o produktach o dane szczegółowe widoczne tylko na podstronie o produkcie
 
