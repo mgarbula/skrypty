@@ -31,7 +31,11 @@
 
 ## [Saper w Lua](https://github.com/mgarbula/skrypty/tree/main/proj4)
 :white_check_mark: 3.0 Postawowa wersja dekstopowa z obsługą na klawiaturze - minimum 4 rodzaje klocków [commit](https://github.com/mgarbula/skrypty/commit/9d26584a68ee9217620686e6fd332e86cbb89638)
+
 :x: 3.5 Zapis i odczyt gier
+
 :x: 4.0 Dodanie efektów dźwiękowych przy akcjach
+
 :x: 4.5 Dodanie animacji przy zbijaniu klocków
+
 :x: 5.0 Wersja na iOS lub Android z implementacją touch zamiast klawiatury
