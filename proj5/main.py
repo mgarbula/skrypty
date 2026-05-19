@@ -1,4 +1,22 @@
 import ollama
+import json
+
+
+def load_menu_string(filepath="menu.json"):
+    try:
+        with open(filepath, "r") as f:
+            data = json.load(f)
+        
+        currency = data.get("currency", "PLN")
+        lines = ["OFFICIAL CAFE MENU:"]
+        
+        for item in data.get("items", []):
+            lines.append(f"- {item['name']}: {item['price']:.2f} {currency} ({item['category']})")
+            
+        return "\n".join(lines)
+    except FileNotFoundError:
+        # Fallback if file isn't found
+        return "OFFICIAL CAFE MENU:\n- Espresso: 6 PLN\n- Cappuccino: 10 PLN"
 
 ROUTER_SYSTEM_PROMPT = """
 You are an intent classification router engine.
@@ -10,12 +28,7 @@ Your job is to analyze user input and classify it to exactly ONE of these intent
 CRITICAL: You must reply with exactly one word from this list: [WELCOME, MENU, ORDER]. Do not include punctuation, markdown, or any other text.
 """
 
-MENU_DATA = """
-- Espresso: 6 PLN
-- Cappuccino: 10 PLN
-- Avocado Toast: 20 PLN
-- Chocolate Croissant: 10 PLN
-"""
+MENU_DATA = load_menu_string()
 
 INTENT_PROMPTS = {
     "WELCOME": """
@@ -89,8 +102,6 @@ def main():
             break
 
         detected_intent = get_intent(user_input)
-
-        print(f"    [DEBUG - detected intent: {detected_intent}]")
 
         bot_response = generate_response(detected_intent, user_input, history)
         print(f"Bot: {bot_response}\n")

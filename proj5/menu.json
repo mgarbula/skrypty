@@ -1,0 +1,9 @@
+{
+  "currency": "PLN",
+  "items": [
+    {"name": "Espresso", "price": 6, "category": "drink"},
+    {"name": "Cappuccino", "price": 10, "category": "drink"},
+    {"name": "Avocado Toast", "price": 20, "category": "food"},
+    {"name": "Chocolate Croissant", "price": 10, "category": "food"}
+  ]
+}
