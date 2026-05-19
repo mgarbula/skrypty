@@ -39,3 +39,14 @@
 :x: 4.5 Dodanie animacji przy zbijaniu klocków
 
 :x: 5.0 Wersja na iOS lub Android z implementacją touch zamiast klawiatury
+
+## [Chatbot w Python](https://github.com/mgarbula/skrypty/tree/main/proj5)
+:white_check_mark: 3.0 Czatbot z wytrenowaną umiejętnością (poprzez prompt) obsługi co najmniej 3 sposobów sformułowania intencji (powitanie, menu, zamówienie). [commit](https://github.com/mgarbula/skrypty/commit/c34a6beefb87843c60d38bc7d613c324d8626854)
+
+:white_check_mark: 3.5 Informacje o godzinach otwarcia i pozycjach w menu powinny być pobierane z pliku konfiguracyjnego (JSON/YAML) i przekazywane do modelu. [commit](https://github.com/mgarbula/skrypty/commit/1dc515a7dc99afcf0e6cb2e7f0475617b31d327f)
+
+:x: 4.0 Czatbot musi przetworzyć zamówienie i potwierdzić zakupione posiłki, a także obsłużyć dodatkowe prośby (np. alergie, modyfikacje dań). Dane o alergiach, składzie, daniach ładowy z api aplikacji webowej napisanej we Flasku (https://flask.palletsprojects.com/en/stable/).
+
+:x: 4.5 Czatbot musi potwierdzić, kiedy posiłek będzie dostępny do odbioru w restauracji (estymacja czasu na podstawie zamówienia).
+
+:x: 5.0 Czatbot powinien zapytać o adres dostawy i potwierdzić go, zamiast opcji odbioru osobistego, weryfikując kompletność danych adresowych. Zapisać zamówienie przez wywołanie api aplikacji we Flasku. We Flasku zapisujemy dane zamówienia w bazie.
